@@ -6,6 +6,12 @@
         <span class="font-weight-light">MATERIAL DESIGN</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-btn flat href="/">Home</v-btn>
+      <v-spacer></v-spacer>
+      <v-btn flat href="/autocomp">Auto Comp</v-btn>
+      <v-spacer></v-spacer>
+      <v-btn flat href="/about">About</v-btn>
+      <v-spacer></v-spacer>
       <v-btn
         flat
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
@@ -14,21 +20,16 @@
         <span class="mr-2">Latest Release</span>
       </v-btn>
     </v-toolbar>
-
     <v-content>
-      <HelloWorld />
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld
-  },
+  components: {},
   data() {
     return {
       //
